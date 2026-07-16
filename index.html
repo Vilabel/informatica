@@ -3,24 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio</title>
+    <title>Portafolio - Grupo 2</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            margin: 0;
+            padding: 0;
+            color: #333333;
+        }
+        header {
+            background-color: #1e293b;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+        }
+        nav {
+            background-color: #334155;
+            text-align: center;
+            padding: 10px;
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 8px 16px;
+            display: inline-block;
+        }
+        nav a:hover {
+            background-color: #0ea5e9;
+            border-radius: 4px;
+        }
+        main {
+            display: flex;
+        }
+        aside {
+            width: 25%;
+            float: left;
+            background-color: #ffffff;
+            padding: 20px;
+            box-sizing: border-box;
+            min-height: 450px;
+        }
+        aside h3 {
+            color: #1e293b;
+            border-bottom: 2px solid #0ea5e9;
+            padding-bottom: 5px;
+        }
+        aside ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        aside li {
+            margin: 12px 0;
+        }
+        aside a {
+            color: #475569;
+            text-decoration: none;
+            display: inline-block;
+            padding: 6px;
+        }
+        aside a:hover {
+            background-color: #f1f5f9;
+            color: #0ea5e9;
+            padding-left: 12px;
+        }
+        section {
+            width: 75%;
+            float: left;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        iframe {
+            width: 100%;
+            height: 450px;
+            border: 2px solid #334155;
+            background-color: #ffffff;
+        }
+        footer {
+            background-color: #1e293b;
+            color: #ffffff;
+            text-align: center;
+            padding: 15px;
+            clear: both;
+        }
+        footer span {
+            color: #0ea5e9;
+            font-weight: bold;
+        }
+        .img-tecnologia {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+            border-radius: 4px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Portafolio de Informatica</h1>
-    <p>Grupo 2</p>
-    <hr>
-    <h3>¿Quienes somos?</h3>
-    <p>Somos Nicolas y Tadeo alumnos de 3H y aqui plasmaremos los trabajos hechos en clase de Maryzambrano</p>
-    <h3>Ejercicios y desafios de clases</h3>
-    <ul>
-        <LI><a href="./pages/listas.html"> Ejercicio 1: Listas</a></LI>
-        <LI><a href="./pages/tabla.html"> Ejercicio 2: Tablas</a></LI>
-        <LI><a href="./pages/tienda.html"> Ejercicio 3: Semántica</a></LI>
-        <LI><a href="./pages/semantica.html"> Ejercicio 4: Informes</a></LI>
-        <LI><a href="./pages/periodico.html"> Ejercicio 5: Diario</a></LI>
-    </ul>
-    <tr>
-    <td><img src="../img/tecnologia.png" alt="tecnologias usadas"></td>
-    </tr>  
+
+    <header>
+        <h1>Portafolio de Informatica</h1>
+        <p>Grupo 2</p>
+    </header>
+
+    <nav>
+        <a href="https://github.com/vilabel/informatica" target="_blank"><i class="bi bi-github"></i> GitHub</a>
+        <a href="https://drive.google.com/drive/folders/1zdpeq377yzHJC-keDrPiA7UTYU5LD8DD?usp=drive_link" target="_blank"><i class="bi bi-google"></i> Google Drive</a>
+    </nav>
+
+    <main>
+
+        <aside>
+            <h3>¿Quienes somos?</h3>
+            <p>Somos Nicolas y Tadeo alumnos de 3H y aqui plasmaremos los trabajos hechos en clase de Maryzambrano</p>
+            
+            <h3>Ejercicios y desafios</h3>
+            <ul>
+                <li><a href="./pages/listas.html" target="visor">Ejercicio 1: Listas</a></li>
+                <li><a href="./pages/tabla.html" target="visor">Ejercicio 2: Tablas</a></li>
+                <li><a href="./pages/tienda.html" target="visor">Ejercicio 3: Semántica</a></li>
+                <li><a href="./pages/semantica.html" target="visor">Ejercicio 4: Informes</a></li>
+                <li><a href="./pages/periodico.html" target="visor">Ejercicio 5: Diario</a></li>
+            </ul>
+
+            <img src="./img/tecnologia.png" alt="tecnologias usadas" class="img-tecnologia">
+        </aside>
+
+        <section>
+            <iframe name="visor" src="./pages/listas.html"></iframe>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Taller de Informática | Profesora <span>Maryzambrano</span></p>
+    </footer>
+
 </body>
 </html>
