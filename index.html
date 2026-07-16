@@ -63,10 +63,16 @@
             display: inline-block;
             padding: 6px;
         }
+        aside a i {
+            margin-right: 8px;
+            color: #0ea5e9; /* Color celeste para destacar los íconos */
+        }
         aside a:hover {
             background-color: #f1f5f9;
             color: #0ea5e9;
             padding-left: 12px;
+            border-radius: 4px;
+            transition: all 0.2s ease;
         }
         section {
             width: 75%;
@@ -79,6 +85,7 @@
             height: 450px;
             border: 2px solid #334155;
             background-color: #ffffff;
+            border-radius: 6px;
         }
         footer {
             background-color: #1e293b;
@@ -119,11 +126,31 @@
             
             <h3>Ejercicios y desafios</h3>
             <ul>
-                <li><a href="./pages/listas.html" target="visor">Ejercicio 1: Listas</a></li>
-                <li><a href="./pages/tabla.html" target="visor">Ejercicio 2: Tablas</a></li>
-                <li><a href="./pages/tienda.html" target="visor">Ejercicio 3: Semántica</a></li>
-                <li><a href="./pages/semantica.html" target="visor">Ejercicio 4: Informes</a></li>
-                <li><a href="./pages/periodico.html" target="visor">Ejercicio 5: Diario</a></li>
+                <li>
+                    <a href="./pages/listas.html" target="visor">
+                        <i class="bi bi-list-task"></i> Ejercicio 1: Listas
+                    </a>
+                </li>
+                <li>
+                    <a href="./pages/tabla.html" target="visor">
+                        <i class="bi bi-table"></i> Ejercicio 2: Tablas
+                    </a>
+                </li>
+                <li>
+                    <a href="./pages/tienda.html" target="visor">
+                        <i class="bi bi-bag-check"></i> Ejercicio 3: Semántica
+                    </a>
+                </li>
+                <li>
+                    <a href="./pages/semantica.html" target="visor">
+                        <i class="bi bi-file-earmark-text"></i> Ejercicio 4: Informes
+                    </a>
+                </li>
+                <li>
+                    <a href="./pages/periodico.html" target="visor">
+                        <i class="bi bi-newspaper"></i> Ejercicio 5: Diario
+                    </a>
+                </li>
             </ul>
 
             <img src="./img/tecnologia.png" alt="tecnologias usadas" class="img-tecnologia">
