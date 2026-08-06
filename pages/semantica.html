@@ -1,39 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-        <style>
-        header { background-color: #46db28; padding: 15px; text-align: center; }
-        nav { background-color: #000000; padding: 10px; }
-        nav a { color: rgb(255, 255, 255); margin-right: 15px; text-decoration: none; }
-        main { background-color: #23d81d; padding: 20px; }
-        section { background-color: #da0d0d; padding: 15px; margin-bottom: 15px; }
-        footer { background-color: #000000; color: rgb(255, 255, 255); text-align: center; padding: 10px; }
-</style>
+    <title>Blog de Tecnología</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8fafc;
+            margin: 0;
+            padding: 0;
+            color: #334155;
+        }
+
+        header { 
+            background-color: #e0f2fe; /* Azul pastel suave */
+            color: #0369a1; 
+            padding: 25px; 
+            text-align: center; 
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav { 
+            background-color: #bae6fd; /* Celeste pastel */
+            padding: 12px; 
+            text-align: center;
+        }
+
+        nav a { 
+            color: #0369a1; 
+            margin: 0 10px; 
+            text-decoration: none; 
+            font-weight: bold;
+            padding: 6px 14px;
+            border-radius: 20px;
+            transition: all 0.2s ease;
+        }
+
+        nav a:hover {
+            background-color: #ffffff;
+            color: #0284c7;
+        }
+
+        main { 
+            background-color: #f1f5f9; /* Fondo gris/azul muy clarito */
+            padding: 30px 20px; 
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        section { 
+            background-color: #ffffff; /* Tarjeta blanca limpia */
+            padding: 20px 25px; 
+            margin-bottom: 20px; 
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04); /* Sombra suave aesthetic */
+        }
+
+        section h2 {
+            color: #0284c7;
+            margin-top: 0;
+        }
+
+        article h3 {
+            color: #0f172a;
+        }
+
+        footer { 
+            background-color: #e0f2fe; 
+            color: #0369a1; 
+            text-align: center; 
+            padding: 15px; 
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>Blog de Tecnología de 3º Año</h1>
     </header>
-        <nav>
-            <a href="#">Inicio</a>
-            <a href="#">Noticias</a>
-            <a href="#">Contacto</a>
-        </nav>
-        <main>
-            <section>
-                <h2>Últimas Noticias</h2>
-                    <article>
-                        <h3>¿Qué es HTML5?</h3>
-                            <p>Es la quinta revisión del lenguaje HTML, la cual introdujo las
-                            etiquetas semánticas...</p>
-                    </article>
-            </section>
-        </main>
-        <footer>
-            <p>2026 - Taller de Informática</p>
-        </footer>
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Noticias</a>
+        <a href="#">Contacto</a>
+    </nav>
+    <main>
+        <section>
+            <h2>Últimas Noticias</h2>
+            <article>
+                <h3>¿Qué es HTML5?</h3>
+                <p>Es la quinta revisión del lenguaje HTML, la cual introdujo las etiquetas semánticas...</p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>2026 - Taller de Informática</p>
+    </footer>
 </body>
 </html>
